@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>CSS3 - sample1</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta http-equiv="pragma" content="no-cache">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sonsie+One">
+  <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+
+  <ul id="js-list" class="list">
+    <li class="list__item">
+      <p class="list__photo"><img src="http://image.camera.tabelog.k-img.com/photos/2/2/6/9/9/0/2/20a259c6852f1cde634712f0576f2a25_o.jpg?1432310446" alt=""></p>
+      <p class="list__name">湯葉と豆乳のタタキ梅うどん</p>
+      <p class="list__kana">（うどん山長）</p>
+      <dl class="list__feature">
+        <dt>TEL</dt>
+        <dd>03-3443-1701</dd>
+      </dl>
+    </li>
+    <li class="list__item">
+      <p class="list__photo"><img src="http://image.camera.tabelog.k-img.com/photos/6/4/2/2/2/7/1/398b70dab6933977f38b71beeb172f25_o.jpg?1416487508" alt=""></p>
+      <p class="list__name">パンケーキ</p>
+      <p class="list__kana">（アクイーユ）</p>
+      <dl class="list__feature">
+        <dt>TEL</dt>
+        <dd>03-3443-1701</dd>
+      </dl>
+    </li>
+    <li class="list__item">
+      <p class="list__photo"><img src="http://image.camera.tabelog.k-img.com/photos/5/5/2/4/2/6/1/68207d6b9e444e82e37449133bacc263_o.jpg?1412570531" alt=""></p>
+      <p class="list__name">牡蠣とクレソンのカレー</p>
+      <p class="list__kana">（sync）</p>
+      <dl class="list__feature">
+        <dt>TEL</dt>
+        <dd>03-3443-1701</dd>
+      </dl>
+    </li>
+    <li class="list__item">
+      <p class="list__photo"><img src="http://image.camera.tabelog.k-img.com/photos/1/4/4/0/8/0/2/99b9231e6d89ad1773addb3b8ea67135_o.jpg?1431442056" alt=""></p>
+      <p class="list__name">カオソイ</p>
+      <p class="list__kana">（cochi）</p>
+      <dl class="list__feature">
+        <dt>TEL</dt>
+        <dd>03-3443-1701</dd>
+      </dl>
+    </li>
+    <li class="list__item">
+      <p class="list__photo"><img src="http://image.camera.tabelog.k-img.com/photos/4/7/8/6/0/9/1/44e2502b94e8cc02700208bf83634656_o.jpg?1424174900" alt=""></p>
+      <p class="list__name">白湯ラーメン</p>
+      <p class="list__kana">（おおぜき中華そば店）</p>
+      <dl class="list__feature">
+        <dt>TEL</dt>
+        <dd>03-3443-1701</dd>
+      </dl>
+    </li>
+    <li class="list__item">
+      <p class="list__photo"><img src="http://image.camera.tabelog.k-img.com/photos/9/2/8/8/5/5/1/106c5a3e715ab03cba6c888c865ce3f2_o.jpg?1410072316" alt=""></p>
+      <p class="list__name">パンケーキ</p>
+      <p class="list__kana">（パンケーキ・リストランテ）</p>
+      <dl class="list__feature">
+        <dt>TEL</dt>
+        <dd>03-3443-1701</dd>
+      </dl>
+    </li>
+  </ul>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript">
+    ;(function(){
+
+      $(window).load(function(){
+        $('.list__item').addClass('is-noselected');
+      });
+
+      $('.list__item').on('click', function(){
+        $(this).toggleClass('is-noselected').toggleClass('is-selected');
+      });
+
+    }());
+  </script>
+
+</body>
+</html>
